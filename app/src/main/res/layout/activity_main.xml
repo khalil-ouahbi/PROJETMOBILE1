@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#03A9F4"
+        android:paddingLeft="100dp"
+        android:text="Connexion"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewEmailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:text="E-mail:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewEmailLabel"
+        android:layout_marginTop="18dp"
+        android:width="100dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Entrez votre e-mail"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/textViewPasswordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="8dp"
+        android:text="Mot de passe:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPasswordLabel"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Entrez votre mot de passe"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="28dp"
+        android:width="800dp"
+        android:background="#939F14"
+        android:backgroundTint="#CDDC39"
+        android:hapticFeedbackEnabled="true"
+        android:text="Se connecter"
+        app:cornerRadius="7dp"
+        app:strokeColor="#CDDC39" />
+
+    <CheckBox
+        android:id="@+id/checkBoxRememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLogin"
+        android:layout_alignEnd="@+id/textViewForgotPassword"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="-13dp"
+        android:text="Garder ma session active" />
+
+    <TextView
+        android:id="@+id/textViewForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLogin"
+        android:layout_marginTop="124dp"
+        android:layout_marginBottom="16dp"
+        android:text="Mot de passe oublié ?"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewNoAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewForgotPassword"
+        android:layout_marginTop="16dp"
+        android:text="Vous n'avez pas de compte ?"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewNoAccount"
+        android:layout_marginTop="8dp"
+        android:text="Inscrivez-vous"
+        android:onClick="OpenSecondActivity"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

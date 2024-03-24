@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Categories -->
+    <string-array name="categories">
+        <item>Catégorie 1</item>
+        <item>Catégorie 2</item>
+        <item>Catégorie 3</item>
+        <!-- Ajoutez d'autres catégories au besoin -->
+    </string-array>
+
+    <!-- Secteurs -->
+    <string-array name="sectors">
+        <item>Secteur 1</item>
+        <item>Secteur 2</item>
+        <item>Secteur 3</item>
+        <!-- Ajoutez d'autres secteurs au besoin -->
+    </string-array>
+
+    <!-- Villes -->
+    <string-array name="cities">
+        <item>Agadir</item>
+        <item>Casa</item>
+        <item>Asfi</item>
+        <!-- Ajoutez d'autres villes au besoin -->
+    </string-array>
+
+    <!-- Types de contrat -->
+    <string-array name="contract_types">
+        <item>Type 1</item>
+        <item>Type 2</item>
+        <item>Type 3</item>
+        <!-- Ajoutez d'autres types de contrat au besoin -->
+    </string-array>
+</resources>

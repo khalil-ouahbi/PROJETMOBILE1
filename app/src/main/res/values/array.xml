@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cities_array">
+        <item>agadir</item>
+        <item>casa</item>
+        <item>jadida</item>
+        <!-- Ajoutez d'autres villes ici -->
+    </string-array>
+</resources>
